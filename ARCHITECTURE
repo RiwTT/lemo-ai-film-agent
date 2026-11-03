@@ -1,0 +1,35 @@
+# GPT AI Film Agent
+
+## Goal
+Build a full AI Film Studio with GPT as the main orchestrator and Gemini as a supporting agent.
+
+## Workflow
+1. Create film brief
+2. Write screenplay
+3. Generate storyboard
+4. Plan visual and audio direction
+5. Build timeline
+6. Preview and approve
+7. Render and export MP4
+
+## Architecture
+- apps/web: Film Studio interface
+- apps/api: Backend API and GPT Actions
+- apps/worker: Rendering worker
+- PostgreSQL: Projects and job metadata
+- Queue: Background rendering jobs
+- Object storage: Media assets and MP4 files
+
+## Engine
+Use LEMO Opuscar as the film production engine.
+
+## AI
+- GPT: Main orchestrator
+- Gemini: Supporting agent
+
+## Security
+Keep all API keys in server-side environment variables.
+Never commit secrets.
+
+## Status
+Architecture planning stage. Production services and deployment are not yet implemented.
