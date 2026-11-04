@@ -1,52 +1,5 @@
-from openai import OpenAI
-
-# นำ API Key ที่ได้มาใส่ตรงพารามิเตอร์ api_key แบบนี้
-client = OpenAI(api_key="from openai import OpenAI
-
-
-print("กำลังเชื่อมต่อกับ OpenAI...")
-
-# ส่งข้อความทดสอบไปยังโมเดล
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {"role": "system", "content": "คุณคือผู้ช่วยอัจฉริยะ"},
-        {"role": "user", "content": "สวัสดี! แนะนำตัวสั้นๆ เป็นภาษาไทยให้หน่อย"}
-    ]
-)
-
-# แสดงผลลัพธ์ที่ AI ตอบกลับมา
-print("\n--- ผลลัพธ์จาก AI ---")
-print(response.choices[0].message.content)
-")
-
-print("กำลังเชื่อมต่อกับ OpenAI...")
-
-# ส่งข้อความทดสอบไปยังโมเดล
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {"role": "system", "content": "คุณคือผู้ช่วยอัจฉริยะ"},
-        {"role": "user", "content": "สวัสดี! แนะนำตัวสั้นๆ เป็นภาษาไทยให้หน่อย"}
-    ]
-)
-
-# แสดงผลลัพธ์ที่ AI ตอบกลับมา
-print("\n--- ผลลัพธ์จาก AI ---")
-print(response.choices[0].message.content)
-")
-
-print("กำลังเชื่อมต่อกับ OpenAI...")
-
-# ส่งข้อความทดสอบไปยังโมเดล
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {"role": "system", "content": "คุณคือผู้ช่วยอัจฉริยะ"},
-        {"role": "user", "content": "สวัสดี! แนะนำตัวสั้นๆ เป็นภาษาไทยให้หน่อย"}
-    ]
-)
-
-# แสดงผลลัพธ์ที่ AI ตอบกลับมา
-print("\n--- ผลลัพธ์จาก AI ---")
-print(response.choices[0].message.content)
+git branch --show-current
+printf "OpenAI: "
+[ -n "$OPENAI_API_KEY" ] && echo "FOUND" || echo "MISSING"
+printf "Gemini: "
+[ -n "$GEMINI_API_KEY" ] && echo "FOUND" || echo "MISSING"
